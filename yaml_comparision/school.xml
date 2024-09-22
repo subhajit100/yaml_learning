@@ -1,0 +1,17 @@
+<!-- I want a school which has name, principal and multiple students. Each student has name, rollno, age.  -->
+
+<?xml version="1.0" encoding="utf-8"?>
+<School name="KVIMA" principal="Maurya">
+    <Students>
+        <Student>
+            <name>Rahul</name>
+            <age>34</age>
+            <rollno>2</rollno>
+        </Student>
+        <Student>
+            <name>Ashish</name>
+            <age>31</age>
+            <rollno>10</rollno>
+        </Student>
+    </Students>
+</School>

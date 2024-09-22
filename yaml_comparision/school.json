@@ -1,0 +1,12 @@
+// I want a school which has name, principal and multiple students. Each student has name, rollno, age.
+
+{
+  "School": {
+    "name": "KVIMA",
+    "principal": "Maurya",
+    "students": [
+      { "name": "Rahul", "age": 34, "rollno": 2 },
+      { "name": "Ashish", "age": 31, "rollno": 10 }
+    ]
+  }
+}

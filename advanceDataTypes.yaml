@@ -1,0 +1,85 @@
+student: !!seq  # seq is for list of items
+  - marks
+  - age
+  - name
+  - address
+
+---
+#some of the values of the sequence is empty
+mySeq:
+  - abc
+  - def
+  -
+  - jkl
+
+---
+# nested sequences
+myNestedSeq:
+  -
+    - abc
+    - def
+    -
+    - jkl
+
+  -
+    - abc
+    - def
+    - qee
+    - jkl  
+
+---
+# nested mappings (map within a map)
+myNestedMap:
+  name: Subhajit
+  address:   # this is one more map
+    city: Mumbai
+    state: Maharashtra   
+
+
+---
+# using pairs
+myname: !!pairs
+  - job: Devops
+  - job: SWE
+
+---
+# set with unique values
+names: !!set
+  ? Ashish
+  ? Rohan
+  ? Rakesh
+
+---
+# dictionary !!omap
+friendDetails: !!omap
+  - Kunal: 
+      age: 34
+      city: Bengaluru
+      job: SWE
+
+  - Satish:
+      age: 56
+      city: Jaipur
+      job: Devops  
+
+
+---
+# reusing some properties with anchors
+likings: &likes
+  favFruit: Apple
+  favPlace: Manali
+
+person1: 
+  name: Rahul
+  age: 27
+  << : *likes  # referring to likes named for likings
+
+person2: 
+  name: Ansh
+  age: 22
+  << : *likes
+  favPlace: Kullu  # override favPlace for Manali with Kullu
+
+
+
+

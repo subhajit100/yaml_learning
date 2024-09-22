@@ -1,0 +1,41 @@
+# String variable different ways
+fname: Subhajit
+lname: "Adhikary"
+address: 'bengaluru'
+
+---
+# write a single line in multiple lines
+multipleLines: >
+This will be a single
+line but I am writing in
+different lines to show you 
+
+number: 7762
+marks: 56.89
+booleanValue: Yes  # True, TRUE, true, On also works
+# same goes for false:- f, False, FALSE
+
+
+---
+# specifying types to variables
+zero: !!int 0
+positiveNum: !!int 98
+negativeNum: !!int -81
+binaryNum: !!int 0b0110
+hexaNum: !!int 0x3f4a
+commaValue: !!int 530_000 #530,000
+classMarks: !!float 78.98
+infiniteVal: !!float .inf
+notANum: .nan
+booleanValue: !!bool True
+message: !!str 'Hello Subhajit'
+
+---
+#null values
+middleName: !!null Null # or null NULL ~
+
+---
+# dates and time
+date: !!timestamp 2022-11-12
+indiaTime: 2001-12-14T21:59:43.10 +05:30
+normalTime: 2001-12-14T21:59:43.10

@@ -1,0 +1,25 @@
+# inside cities, we have a list
+cities:
+  - Mumbai
+  - Delhi
+  - Chandigarh
+
+---  # divides from other documents using ---
+"name": "Subhajit"
+1: "Number one"
+
+---
+# list
+- Dosa
+- Idli
+- Vada
+- Poori
+- Paneer
+
+---
+#storing data in single line
+fruits: ['apple', 'banana', 'orange']
+myDetails: {name: "Subhajit", age: 25}
+
+...  # end of file
+
